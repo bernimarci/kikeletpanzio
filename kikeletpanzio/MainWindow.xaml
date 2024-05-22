@@ -1,0 +1,24 @@
+﻿<Window x:Class="kikeletpanzio.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:kikeletpanzio"
+        mc:Ignorable="d"
+        Title="Szeméyles adatok" Height="300" Width="400" Background="Beige">
+    <Window.Resources>
+        <Style TargetType="Button">
+            <Setter Property="Background" Value="Yellow"/>
+        </Style>
+    </Window.Resources>
+    <StackPanel>
+        <Label Content="Vezetéknév" Margin="5"/>
+        <TextBox x:Name="TbxVezeteknev"/>
+        <Label Content="Keresztnév" Margin="5"/>
+        <TextBox x:Name="TbxKeresztnev"/>
+        <Label Content="Születési hely,idő:" Margin="5"/>
+        <DatePicker x:Name="DprSzuletesidatum"/>
+        <CheckBox x:Name="CbxVipVendeg" Content="VIP-Vendég" Margin="5"/>
+        <Button x:Name="BtnFoglalas" Content="Tovább a foglalásra" Width="150" Height="30" Padding="5" Click="BtnFoglalas_Click"/>
+    </StackPanel>
+</Window>

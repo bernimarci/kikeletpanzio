@@ -1,0 +1,24 @@
+﻿<Window x:Class="kikeletpanzio.Foglalas"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:kikeletpanzio"
+        mc:Ignorable="d"
+        Title="Foglalas" Height="500" Width="400" Background="Bisque">
+    <Window.Resources>
+        <Style TargetType="Button">
+            <Setter Property="Background" Value="Orange"/>
+        </Style>
+    </Window.Resources>
+    <StackPanel>
+        <Label Content="Hány fős szobát szeretne?"/>
+        <ComboBox x:Name="CbxHanySzobatSzeretne"/>
+        <Label Content="Gyerek"/>
+        <ComboBox x:Name="CbxGyerek"/>
+        <Label Content="Felnőtt"/>
+        <ComboBox x:Name="CbxFelnott"/>
+        <Button x:Name="BtnFoglalas" Content="Foglalás" Width="100" Height="30" Padding="5" Margin="30" Click="BtnFoglalas_Click"/>
+        <Button x:Name="BtnMegsem" Content="Mégsem" Width="100" Height="30" Padding="5" Click="BtnMegsem_Click"/>
+    </StackPanel>
+</Window>
