@@ -22,7 +22,6 @@ namespace kikeletpanzio
         public Foglalas()
         {
             InitializeComponent();
-
             CbxHanySzobatSzeretne.Items.Add("2");
             CbxHanySzobatSzeretne.Items.Add("3");
             CbxHanySzobatSzeretne.Items.Add("4");
